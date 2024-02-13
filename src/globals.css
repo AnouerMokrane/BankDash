@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.link-border {
+  @apply before:absolute before:-left-6 before:top-1/2 before:-translate-y-1/2 before:w-[5px] before:h-12 before:bg-primary3 before:rounded-e-3xl;
+}
+
+.sidebar-links .active {
+  @apply text-primary3 link-border;
+}
+
+.blue-gradient1 {
+  @apply bg-gradient-to-r from-[#4c49ed] to-[#0a06f4];
+}
+
+.heading1 {
+  @apply text-primary2 text-base font-semibold lg:text-lg;
+}
+
+.setting-links > li.active {
+  @apply text-secondary-blue font-medium before:absolute before:w-[calc(100%+8px)] before:h-1 before:bg-secondary-blue before:-bottom-1 before:-left-1 before:rounded-tr-lg before:rounded-tl-lg lg:before:-bottom-2;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-secondary-blue rounded-full;
+}
