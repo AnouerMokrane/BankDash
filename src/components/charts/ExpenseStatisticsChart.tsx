@@ -23,10 +23,9 @@ const ExpenseStatisticsChart = () => (
         strokeWidth={12}
       >
         {data.map((entry, index) => (
-          <Cell
-            key={`cell-${index}`}
-            fill={COLORS[index % COLORS.length]}
-          ></Cell>
+          <Cell key={`cell-${entry}`} fill={COLORS[index % COLORS.length]}>
+            {" "}
+          </Cell>
         ))}
       </Pie>
       <Legend

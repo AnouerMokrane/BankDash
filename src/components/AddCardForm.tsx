@@ -36,7 +36,7 @@ const AddCardForm = () => {
               className="mt-2 placeholder:text-xs"
             />
           </div>
-          <div c>
+          <div>
             <label htmlFor="card-type" className="text-[13px] mb-4">
               Expiration Date
             </label>

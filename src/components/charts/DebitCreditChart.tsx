@@ -98,13 +98,11 @@ const DebitCreditChart = () => {
   );
 };
 
-const renderLegendContent = (props: {
-  payload: { value: string; color: string }[];
-}) => {
+const renderLegendContent = (props: any) => {
   const { payload } = props;
   return (
     <ul className="flex justify-end gap-5 p-0 mb-4 mr-4">
-      {payload.map((entry, index) => (
+      {payload.map((entry: any, index: number) => (
         <li key={`item-${index}`} className="flex text-center">
           <span
             style={{

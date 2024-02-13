@@ -29,7 +29,7 @@ const data = [
   },
 ];
 
-const CustomTooltip = ({ active, payload, label }) => {
+const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload) {
     return (
       <div className="custom-tooltip border bg-white p-2 rounded-lg">
