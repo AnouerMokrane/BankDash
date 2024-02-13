@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   BarChart,
   Bar,
@@ -89,7 +89,6 @@ const BarChartUi = () => {
             iconType="circle"
             content={renderLegendContent}
           />
-
           <Bar dataKey="Deposit" fill="#1814f3" barSize={barSize} radius={20} />
           <Bar
             dataKey="Withdraw"
