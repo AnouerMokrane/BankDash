@@ -11,7 +11,6 @@ const SideBar = () => {
       } duration-300`}
       onBlur={() => setOpenSidebar(false)}
     >
-      <span className=""></span>
       <img src="./assets/Logo.svg" alt="bankdash" />
       <ul className="sidebar-links flex flex-col gap-6 mt-14">
         {links.map((link) => {
@@ -28,6 +27,18 @@ const SideBar = () => {
           );
         })}
       </ul>
+      <div className="text-center absolute bottom-3 left-11 xl:left-14">
+        <p className="text-sm text-wild-blue">
+          Designed By{" "}
+          <a
+            href="https://www.figma.com/@sejal_ui_ux"
+            target="_blank"
+            className="text-primary3 font-medium"
+          >
+            Seju{" "}
+          </a>{" "}
+        </p>
+      </div>
     </div>
   );
 };
